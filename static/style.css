@@ -85,17 +85,17 @@ h1 {
 
 
 .letter {
-    height:75px;
-	width: 75px;
-	font-size:20pt;
+    height:60px;
+	width: 60px;
+	font-size:15pt;
 	font-family: verdana;
 	text-align: center;
 }
 
 .appear {
-    display:block;
+    pointer-events: auto;
 }
 
 .disappear {
-    display: none;
+    pointer-events: none;
 }
