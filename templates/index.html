@@ -37,13 +37,13 @@
 <div class="container">
 
 <h2>Wordle Recreation</h2>
-<h3>Version 1.2</h3>
+<h3>Version 1.2.1</h3>
 <h3>Idea credit to NYTimes</h3>
 
 <form>
-    <input type = "text" maxlength="1" class = "letter" id ="letter_one"  onkeyup="next(this, 'letter_two')" ></input>
-    <input type = "text" maxlength="1" class = "letter" id ="letter_two"  onkeyup="next(this, 'letter_three', 'letter_one')" ></input>
-    <input type = "text" maxlength="1" class =" letter" id ="letter_three" onkeyup="next(this, 'letter_four', 'letter_two')"></input>
+    <input type = "text" maxlength="1" class = "letter" id ="letter_one"  onkeyup="next(this, 'letter_two')"></input>
+    <input type = "text" maxlength="1" class = "letter" id ="letter_two"  onkeyup="next(this, 'letter_three', 'letter_one')"></input>
+    <input type = "text" maxlength="1" class =" letter" id ="letter_three" onkeyup="next(this, 'letter_four', 'letter_two')" ></input>
     <input type = "text" maxlength="1" class = "letter" id ="letter_four" onkeyup="next(this, 'letter_five', 'letter_three')"></input>
     <input type = "text" maxlength="2" class = "letter" id ="letter_five" onkeyup="next(this, null, 'letter_four')" onkeypress="test(event, 'letter_one1')"></input>
 </form>
