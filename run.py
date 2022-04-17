@@ -14,6 +14,4 @@ def contacting():
 def scoring():
     return render_template('scoreboard.html')
 
-if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=8080)
-
+app.run(host='localhost', port=5000)

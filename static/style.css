@@ -84,18 +84,18 @@ h1 {
  }
 
 
-.letter {
-    height:60px;
-	width: 60px;
-	font-size:15pt;
+input[class="letter"] {
+    height:75px;
+	width: 75px;
+	font-size:20pt;
 	font-family: verdana;
 	text-align: center;
 }
 
 .appear {
-    pointer-events: auto;
+    display:block;
 }
 
 .disappear {
-    pointer-events: none;
+    display: none;
 }

@@ -1,16 +1,16 @@
-<html>
+<!DOCTYPE html>
 <title>Wordle</title>
 <head>
-<link rel="stylesheet" href="style.css" type="text/css">
-<script src="/editor/html/6485533/2472303/script.js"></script>
+<link rel="stylesheet" href="static/style.css" type="text/css">
+<script src="static/script.js"></script>
 </head>
 <body onload="getWord()">
 <center>
 <!--<h1>Orion</h1>-->
 <nav>
-	<a href="/editor/html/6485533/2472303/index.html">Home</a>
-	<a href="/editor/html/6485533/2472303/scoreboard.html">Scoreboard</a>
-	<a href="/editor/html/6485533/2472303/contact.html">Contact</a>
+	<a href="/index.html">Home</a>
+	<a href="/scoreboard.html">Scoreboard</a>
+	<a href="/contact.html">Contact</a>
 	<div class="animation start-home"></div>
 </nav>
 
@@ -32,7 +32,7 @@
 
 
 </style>
-       
+
 
 <div class="container">
 
@@ -43,7 +43,7 @@
 <form>
     <input type = "text" maxlength="1" class = "letter" id ="letter_one"  onkeyup="next(this, 'letter_two')"></input>
     <input type = "text" maxlength="1" class = "letter" id ="letter_two"  onkeyup="next(this, 'letter_three', 'letter_one')"></input>
-    <input type = "text" maxlength="1" class =" letter" id ="letter_three" onkeyup="next(this, 'letter_four', 'letter_two')" ></input>
+    <input type = "text" maxlength="1" class = "letter" id ="letter_three" onkeyup="next(this, 'letter_four', 'letter_two')" ></input>
     <input type = "text" maxlength="1" class = "letter" id ="letter_four" onkeyup="next(this, 'letter_five', 'letter_three')"></input>
     <input type = "text" maxlength="2" class = "letter" id ="letter_five" onkeyup="next(this, null, 'letter_four')" onkeypress="test(event, 'letter_one1')"></input>
 </form>
@@ -54,7 +54,7 @@
     <input type = "text" maxlength="1" class = "letter" id ="letter_two1"  onkeyup="next(this, 'letter_three1', 'letter_one1')"></input>
     <input type = "text" maxlength="1" class = "letter" id ="letter_three1" onkeyup="next(this, 'letter_four1', 'letter_two1')"></input>
     <input type = "text" maxlength="1" class = "letter" id ="letter_four1"  onkeyup="next(this, 'letter_five1', 'letter_three1')"></input>
-    <input type = "text" maxlength="2" class = "letter" id ="letter_five1" onkeyup="next(this, null, letter_four1"), onkeypress="testOne(event, 'letter_one2')" ></input>
+    <input type = "text" maxlength="2" class = "letter" id ="letter_five1" onkeyup="next(this, null, letter_four1)", onkeypress="testOne(event, 'letter_one2')" ></input>
 </form>
 
 <form class = "disappear" id = "guess2">
@@ -78,7 +78,7 @@
     <input type = "text" maxlength="1" class = "letter" id ="letter_two4" onkeyup="next(this, 'letter_three4', 'letter_one4')"></input>
     <input type = "text" maxlength="1" class = "letter" id ="letter_three4" onkeyup="next(this, 'letter_four4', 'letter_two4')"></input>
     <input type = "text" maxlength="1" class = "letter" id ="letter_four4"  onkeyup="next(this, 'letter_five4', 'letter_three4')"></input>
-    <input type = "text" maxlength="2" class = "letter" id ="letter_five4" onkeypup="next(this, null, 'letter_four4')" onkeypress="testFour(event, 'letter_one5')"></input>
+    <input type = "text" maxlength="2" class = "letter" id ="letter_five4" onkeyup="next(this, null, 'letter_four4')" onkeypress="testThree(event, 'letter_one4')"></input>
 </form>
 
 <form class = "disappear" id = "guess5">
