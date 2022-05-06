@@ -340,3 +340,5 @@ function testFive(event) {
 //function check() {
 
 //}
+//ELI WAS HERE
+//ATTACK IN CLAN WARS OR yoU WILL BE DEMOTED
